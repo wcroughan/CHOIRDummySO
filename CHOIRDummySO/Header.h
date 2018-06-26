@@ -2,7 +2,8 @@
 
 
 extern "C" {
-	__attribute__((visibility("default"))) void pyfun_setparam_prefix(const char* prefix);
+	__attribute__((visibility("default"))) void pyfun_setparam_train_prefix(const char* prefix);
+	__attribute__((visibility("default"))) void pyfun_setparam_experiment_prefix(const char* prefix);
 	__attribute__((visibility("default"))) void pyfun_setparam_output_path(const char* output_path);
 	__attribute__((visibility("default"))) void pyfun_setparam_track_type(const int track_type);
 	__attribute__((visibility("default"))) void pyfun_setparam_num_tetrodes(const int num_tetrodes);

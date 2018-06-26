@@ -4,7 +4,11 @@
 
 int CHOIR_NUM_TETS = 64;
 
-void pyfun_setparam_prefix(const char * prefix)
+void pyfun_setparam_train_prefix(const char * prefix)
+{
+}
+
+void pyfun_setparam_experiment_prefix(const char * prefix)
 {
 }
 
