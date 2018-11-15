@@ -59,11 +59,11 @@ void dummy_analyze(void(*next_tet_callback)(int tet), int start_point)
 	for (int i = start_point; i < CHOIR_NUM_TETS; i++)
 	{
 		next_tet_callback(i + 1);
-		std::this_thread::sleep_for(std::chrono::milliseconds(1750));
+		std::this_thread::sleep_for(std::chrono::milliseconds(150));
 	}
 
 	next_tet_callback(0);
-	std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+	std::this_thread::sleep_for(std::chrono::milliseconds(1500));
 	next_tet_callback(CHOIR_NUM_TETS + 1);
 }
 
